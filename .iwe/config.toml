@@ -1,0 +1,72 @@
+version = 3
+
+[markdown]
+refs_extension = ".md"
+date_format = "%b %d, %Y"
+
+[library]
+path = "graph"
+date_format = "%Y-%m-%d"
+
+[completion]
+
+[commands.default]
+run = "claude -p"
+timeout_seconds = 120
+
+[actions.extract_all]
+type = "extract_all"
+title = "Extract all subsections"
+link_type = "markdown"
+key_template = "{{id}}"
+
+[actions.extract]
+type = "extract"
+title = "Extract"
+link_type = "markdown"
+key_template = "{{id}}"
+
+[actions.sort]
+type = "sort"
+title = "Sort A-Z"
+reverse = false
+
+[actions.today]
+type = "attach"
+title = "Add Date"
+key_template = "{{today}}"
+document_template = """
+# {{today}}
+
+{{content}}
+"""
+
+[actions.inline_section]
+type = "inline"
+title = "Inline section"
+inline_type = "section"
+keep_target = false
+
+[actions.sort_desc]
+type = "sort"
+title = "Sort Z-A"
+reverse = true
+
+[actions.inline_quote]
+type = "inline"
+title = "Inline quote"
+inline_type = "quote"
+keep_target = false
+
+[actions.link]
+type = "link"
+title = "Link"
+link_type = "markdown"
+key_template = "{{id}}"
+
+[templates.default]
+key_template = "{{slug}}"
+document_template = """
+# {{title}}
+
+{{content}}"""
