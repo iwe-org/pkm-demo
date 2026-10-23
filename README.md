@@ -14,7 +14,7 @@ This graph showcases IWE's capabilities for managing interconnected notes, tasks
 
 ## Usage
 
-Requires [iwe](https://github.com/iwe-org/iwe) CLI. All `iwe` commands must be run from this directory:
+Requires the [IWE](https://github.com/iwe-org/iwe) CLI. All `iwe` commands must be run from this directory:
 
 ```bash
 iwe find                    # List all documents
@@ -24,5 +24,5 @@ iwe tree                    # Show document hierarchy
 
 ## Related Projects
 
-- [iwe](https://github.com/iwe-org/iwe) — CLI for markdown document graphs
+- [IWE](https://github.com/iwe-org/iwe) — CLI for markdown document graphs
 - [iwe.md](https://iwe.md) — Documentation and website
